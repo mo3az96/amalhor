@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32 31">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#afbbc6;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="smile" transform="translate(.922 1)">
+        <ellipse id="Ellipse_87" data-name="Ellipse 87" class="cls-1" cx="15" cy="14.5" rx="15" ry="14.5" transform="translate(.078)"/>
+        <path id="Path_77" data-name="Path 77" class="cls-1" d="M8 14a8.014 8.014 0 0 0 5.937 2.969A8.014 8.014 0 0 0 19.874 14" transform="translate(.359 3.444)"/>
+        <path id="Line_3" data-name="Line 3" class="cls-1" transform="translate(10.078 10)" d="M0 0h0"/>
+        <path id="Line_4" data-name="Line 4" class="cls-1" transform="translate(19.078 10)" d="M0 0h0"/>
+    </g>
+</svg>

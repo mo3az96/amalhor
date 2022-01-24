@@ -1,0 +1,35 @@
+body {
+
+    &.inner-page {
+        background-color: #fafafa;
+    }
+}
+
+.page-content {
+    min-height: calc(100vh - 90px);
+    padding: 0 0 70px;
+}
+
+.side-cont {
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.04);
+    background-color: #fff;
+    padding: 20px 14px;
+}
+
+.side-title {
+    font-size: 20px;
+    color: $main;
+    font-weight: 400;
+    margin: 0 0 3px;
+
+    &::after {
+        content: "";
+        height: 1px;
+        width: 45.3px;
+        opacity: 0.21;
+        background-color: #262626;
+        display: block;
+        margin-top: 13px;
+    }
+}

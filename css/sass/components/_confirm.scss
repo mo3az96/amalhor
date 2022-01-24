@@ -1,0 +1,101 @@
+.confirm-modal {
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+
+    min-height: calc(100vh - 60px);
+    max-height: calc(100vh - 60px);
+
+    .modal-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 30px;
+        border: solid 0.5px rgba(#707070, 0.32);
+        background-color: #efefef;
+
+        .modal-title {
+            font-size: 24px;
+            color: $text;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+
+    .modal-body {
+        border: none;
+        padding: 23px 30px 15px;
+
+        p {
+            font-family: SST;
+            font-weight: 400;
+            line-height: 1.58;
+            text-align: center;
+            color: #222;
+            width: 100%;
+            max-width: 300px;
+            margin: auto;
+        }
+    }
+
+    .modal-footer {
+        border: 0;
+        padding: 0 20px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            margin: 0 7.5px;
+            width: 120px;
+            height: 35px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 18px;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+
+            &.submit {
+                background-color: #60d049;
+                color: #fff;
+            }
+
+            &.cancel {
+                border: solid 0.5px #efefef;
+                color: #707070;
+                font-weight: 400;
+            }
+
+            &:hover {
+                text-decoration: none;
+                border-color: $sec;
+                background-color: $sec;
+                color: #fff;
+            }
+        }
+    }
+
+    .sec-confirm {
+        display: none;
+
+        .modal-body {
+            svg {
+                width: 60px;
+            }
+
+            h5 {
+                font-size: 20px;
+                color: #222;
+                font-weight: 700;
+                margin: 10px 0;
+            }
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}

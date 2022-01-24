@@ -1,0 +1,200 @@
+.freelancer-item {
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+
+    @include xs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ~.freelancer-item {
+        margin-top: 20px;
+    }
+
+    .freelancer-img {
+        flex-shrink: 0;
+        position: relative;
+        margin-inline-end: 15px;
+
+        @include xs {
+            margin: 0 0 7px;
+        }
+    }
+
+    .freelancer-img-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: solid 1px rgba(112, 112, 112, 0.15);
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .status {
+        width: 15px;
+        height: 15px;
+        background-color: #8d8d97;
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        border-radius: 50%;
+    }
+
+    &.active {
+
+        .status {
+            background-color: $main;
+        }
+    }
+
+    .freelancer-info {
+        width: 100%;
+    }
+
+    .freelancer-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include xs {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    .freelancer-name {
+        font-size: 20px;
+        color: $text;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            text-decoration: none;
+            color: $sec;
+        }
+    }
+
+    .freelancer-job {
+        width: max-content;
+        height: 25px;
+        border-radius: 25px;
+        background-color: rgba(46, 204, 113, 0.2);
+        font-size: 12px;
+        font-weight: 400;
+        font-family: SST;
+        color: #2ecc71;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-inline-end: auto;
+        margin-inline-start: 10px;
+
+        @include xs {
+            margin: 5px auto;
+        }
+    }
+
+    .sendMsg {
+        width: max-content;
+        height: 35px;
+        border-radius: 2.5px;
+        background-color: $main;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            text-decoration: none;
+            background-color: $sec;
+        }
+    }
+
+    .freelancer-sec-head {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+
+        @include xs {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .rating {
+        display: flex;
+        align-items: center;
+
+        span {
+            fill: none;
+            stroke: #ffba00;
+            stroke-width: 1px;
+
+            ~span {
+                margin-inline-start: 3px;
+            }
+
+            &.active {
+                fill: #ffba00;
+            }
+        }
+
+        @include xs {
+            margin-bottom: 5px;
+        }
+    }
+
+    .feats {
+        display: flex;
+        align-items: center;
+
+        span {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #8c8c96;
+            fill: #8c8c96;
+            font-family: SST;
+            font-weight: 400;
+            margin-inline-start: 10px;
+
+            svg {
+                margin-inline-end: 0;
+            }
+        }
+    }
+
+    .freelancer-summary {
+        margin: 0;
+        font-family: SST;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.5;
+        color: #707070;
+        margin-top: 8px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+
+        @include xs {
+            text-align: justify;
+            text-align-last: center;
+        }
+    }
+}

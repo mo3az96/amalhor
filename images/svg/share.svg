@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="33" viewBox="0 0 30 33">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#60d049;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px}
+        </style>
+    </defs>
+    <g id="Icon_feather-share-2" data-name="Icon feather-share-2" transform="translate(1.5 1.5)">
+        <path id="Path_16425" data-name="Path 16425" class="cls-1" d="M31.5 7.5A4.5 4.5 0 1 1 27 3a4.5 4.5 0 0 1 4.5 4.5z" transform="translate(-4.5 -3)"/>
+        <path id="Path_16426" data-name="Path 16426" class="cls-1" d="M13.5 18A4.5 4.5 0 1 1 9 13.5a4.5 4.5 0 0 1 4.5 4.5z" transform="translate(-4.5 -3)"/>
+        <path id="Path_16427" data-name="Path 16427" class="cls-1" d="M31.5 28.5A4.5 4.5 0 1 1 27 24a4.5 4.5 0 0 1 4.5 4.5z" transform="translate(-4.5 -3)"/>
+        <path id="Path_16428" data-name="Path 16428" class="cls-1" d="m12.885 20.265 10.245 5.97" transform="translate(-4.5 -3)"/>
+        <path id="Path_16429" data-name="Path 16429" class="cls-1" d="m23.115 9.765-10.23 5.97" transform="translate(-4.5 -3)"/>
+    </g>
+</svg>

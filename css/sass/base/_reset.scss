@@ -1,0 +1,51 @@
+body {
+    position: relative;
+    font-family: Hacen;
+    color: $text;
+    font-weight: normal;
+    background: $back;
+
+    &::-webkit-scrollbar {
+        background-color: #fff;
+        width: 7px;
+        height: 0px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $main;
+    }
+
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: $main #fff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button,
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input {
+    -moz-appearance: textfield;
+}
+
+.overflow {
+    overflow: hidden !important;
+}
+
+* {
+    outline: none !important;
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1170px
+    }
+}

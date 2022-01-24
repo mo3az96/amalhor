@@ -1,0 +1,35 @@
+.header-navbar {
+    margin-inline-start: 35px;
+    ul {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    li {
+        margin: 0 16px;
+    }
+
+    a {
+        font-size: 18px;
+        color: $grey;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: $main;
+            text-decoration: none;
+
+            .inner-page & {
+                color: $sec;
+            }
+        }
+
+        &.active {
+            color: $main;
+
+            .inner-page & {
+                color: $sec;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+:root {
+    --primary-color: #60d049;
+    --secondery-color: #00a000;
+    --text-color: #262626;
+    font-size: 16px;
+
+    @include md {
+        font-size: 15px;
+    }
+
+    @include sm {
+        font-size: 14px;
+    }
+}
+
+$main:var(--primary-color);
+$sec:var(--secondery-color);
+$text:var(--text-color);
+$footer:#1d2868;
+$back:#fdf9f3;
+$grey:#707070;

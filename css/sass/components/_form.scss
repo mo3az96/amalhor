@@ -1,0 +1,172 @@
+.form-group {
+    position: relative;
+
+    .show {
+        position: absolute;
+        top: 12.5px;
+        left: 16px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        fill: $text;
+        transition: all 0.3s ease-in-out;
+
+        svg {
+            width: 20px;
+        }
+
+        &:hover {
+            fill: $sec;
+        }
+    }
+}
+
+.group-line {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    @include xs {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+.form-control {
+    border-radius: 5px;
+    border: solid 1px rgba(38, 38, 38, 0.3);
+    height: 45px;
+    width: 100%;
+    padding: 0 17px;
+    font-size: 18px;
+    font-family: SST;
+    font-weight: 300;
+    color: $sec;
+    transition: all 0.3s ease-in-out;
+
+    &::placeholder {
+        color: rgba(34, 34, 34, 0.8);
+    }
+
+    &:focus {
+        outline: none;
+        border-color: $sec;
+        box-shadow: none;
+    }
+}
+
+select {
+    &.form-control {
+        color: rgba(34, 34, 34, 0.8);
+
+        &:focus {
+            outline: none;
+            border-color: rgba(38, 38, 38, 0.3);
+            box-shadow: none;
+        }
+    }
+}
+
+.form-submit {
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: $main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $sec;
+        text-decoration: none;
+    }
+}
+
+.radios-cont {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    .radio {
+        width: 50%;
+        position: relative;
+
+        span {
+            border: solid 1px rgba(34, 34, 34, 0.3);
+            height: 45px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #393939;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: SST;
+            transition: all 0.3s ease-in-out;
+        }
+
+        input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            cursor: pointer;
+            opacity: 0;
+            z-index: 2;
+            height: 100%;
+            width: 100%;
+
+            &:checked {
+                ~span {
+                    color: #fff;
+                    background-color: #262626;
+                }
+            }
+        }
+
+        &:first-of-type {
+            span {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+        }
+
+        &:last-of-type {
+            span {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+        }
+    }
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    color: #222;
+    font-size: 16px;
+
+    input {
+        margin: 0;
+        margin-inline-end: 6px;
+    }
+
+    a {
+        margin-inline-start: 6px;
+        color: $sec;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: $main;
+            text-decoration: none;
+        }
+    }
+}

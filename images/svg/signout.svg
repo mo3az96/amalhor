@@ -1,0 +1,22 @@
+<svg id="Group_2407" data-name="Group 2407" xmlns="http://www.w3.org/2000/svg" width="17.337" height="17.337" viewBox="0 0 17.337 17.337">
+    <defs>
+        <style>
+            .cls-1{fill:#656565}
+        </style>
+    </defs>
+    <g id="Group_88" data-name="Group 88" transform="translate(5.277)">
+        <g id="Group_87" data-name="Group 87">
+            <path id="Path_115" data-name="Path 115" class="cls-1" d="M.377 6.784A.377.377 0 0 1 0 6.407V1.884A1.887 1.887 0 0 1 1.885 0h8.292a1.887 1.887 0 0 1 1.884 1.884v13.569a1.887 1.887 0 0 1-1.884 1.884H1.885A1.887 1.887 0 0 1 0 15.453V10.93a.377.377 0 1 1 .754 0v4.523a1.132 1.132 0 0 0 1.131 1.131h8.292a1.132 1.132 0 0 0 1.131-1.131V1.884a1.132 1.132 0 0 0-1.132-1.13H1.885a1.132 1.132 0 0 0-1.131 1.13v4.523a.377.377 0 0 1-.377.377z"/>
+        </g>
+    </g>
+    <g id="Group_90" data-name="Group 90" transform="translate(0 8.292)">
+        <g id="Group_89" data-name="Group 89">
+            <path id="Path_116" data-name="Path 116" class="cls-1" d="M128.377 234.667h12.061a.377.377 0 1 1 0 .754h-12.061a.377.377 0 1 1 0-.754z" transform="translate(-128 -234.667)"/>
+        </g>
+    </g>
+    <g id="Group_92" data-name="Group 92" transform="translate(0 6.032)">
+        <g id="Group_91" data-name="Group 91">
+            <path id="Path_117" data-name="Path 117" class="cls-1" d="m405.438 173.076 2.261-2.261a.377.377 0 0 1 .533.533l-1.995 1.995 1.995 1.995a.377.377 0 0 1-.533.534l-2.261-2.261a.377.377 0 0 1 0-.535z" transform="translate(-405.328 -170.704)"/>
+        </g>
+    </g>
+</svg>

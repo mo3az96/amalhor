@@ -1,0 +1,327 @@
+.userAdmin-page-title {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+
+    @include xs {
+        flex-direction: column;
+    }
+
+    .user-name {
+        font-size: 30px;
+        color: $text;
+        margin: 0;
+        font-weight: 400;
+    }
+
+    span {
+        font-size: 20px;
+        color: $text;
+        font-family: SST;
+        font-weight: 300;
+        display: block;
+        margin-inline-start: 7px;
+    }
+}
+
+.UserAdmin-page-cont {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 15px;
+
+    @include md {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+.balance-summary-block {
+    border-radius: 5px;
+    border: solid 0.5px rgba(112, 112, 112, 0.49);
+    background-color: #fff;
+    overflow: hidden;
+
+    .block-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(#262626, 0.04);
+        padding: 12px 20px;
+
+        .balance-title {
+            font-size: 24px;
+            color: $main;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            font-size: 16px;
+            font-family: SST;
+            color: $text;
+            transition: all 0.3s ease-in-out;
+
+            .arrow {
+                margin-inline-start: 5px;
+                fill: $main;
+                width: 15px;
+                overflow: hidden;
+                display: inline-flex;
+                align-items: center;
+                justify-content: flex-end;
+                transition: all 0.3s ease-in-out;
+
+                @include sm {
+                    fill: #fff;
+                }
+
+                svg {
+                    width: 35px;
+                    flex-shrink: 0;
+                }
+            }
+
+            &:hover {
+                color: $sec;
+                text-decoration: none;
+
+                .arrow {
+                    fill: $sec;
+                }
+            }
+        }
+    }
+
+    .block-body {
+        display: grid;
+        grid-template-columns: 2fr 3fr 2fr;
+        padding: 20px 10px;
+
+        @include xs {
+            grid-template-columns: 1fr;
+            gap: 20px;
+            text-align: center;
+        }
+    }
+
+    .item {
+        position: relative;
+        padding: 0 10px;
+
+        ~.item {
+            &::before {
+                position: absolute;
+                content: "";
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                content: "";
+                display: block;
+                height: 75.5px;
+                opacity: 0.33;
+                background-color: #60d049;
+                width: 1px;
+
+                @include xs {
+                    display: none;
+                }
+            }
+        }
+
+        h6 {
+            margin: 0;
+            font-family: SST;
+            font-weight: 400;
+            font-size: 18px;
+            color: #262626;
+        }
+
+        strong {
+            font-family: SST;
+            font-weight: 700;
+            font-size: 20px;
+            color: $main;
+            margin: 5px 0;
+            display: block;
+        }
+
+        p {
+            color: #262626;
+            opacity: 0.37;
+            font-size: 14px;
+            font-family: SSt;
+            font-weight: 400;
+            margin: 0;
+
+            @include xs {
+                text-align: justify;
+                text-align-last: center;
+            }
+        }
+    }
+}
+
+.states-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: rgba(#e2e2e2, 0.4);
+    padding: 20px 0;
+    margin-top: 20px;
+
+    @include xs {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .states-title {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #262626;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        position: relative;
+
+        @include xs {
+            flex-direction: row;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        span {
+            font-size: 52px;
+            line-height: 0.9;
+        }
+
+        &::after {
+            height: 116px;
+            width: 1px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.19;
+            position: absolute;
+            background-color: #707070;
+            content: "";
+
+            @include xs {
+                display: none;
+            }
+        }
+    }
+
+    .states-cont {
+        padding: 0 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+
+        @include xs {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+    }
+
+    .chart-text-cont {
+        position: relative;
+    }
+
+    .chart-item {
+        display: flex;
+        align-items: flex-end;
+        overflow: hidden;
+        width: 150px;
+        height: 95px;
+    }
+
+    .chart-num {
+        position: absolute;
+        top: 48px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        font-family: SST;
+        font-weight: 700;
+    }
+
+    .chart-name {
+        text-align: center;
+        display: block;
+        font-size: 18px;
+        font-family: SST;
+        font-weight: 400;
+        margin-top: 5px;
+    }
+}
+
+.lattest-projects {
+  
+
+    .project-item {
+        padding: 11px 0;
+        box-shadow: none;
+        border-radius: 0;
+        border-bottom: solid 1px rgba(#262626, 0.21);
+
+        &:last-of-type {
+            border-bottom: 0;
+        }
+
+        .project-head {
+            @include xs {
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-direction: row;
+            }
+        }
+
+        .project-name {
+            font-size: 16px;
+        }
+
+        .addToFav {
+            width: 30px;
+            height: 30px;
+            padding: 0;
+
+            svg {
+                transform: scale(0.5);
+            }
+
+            @include xs {
+                position: static;
+            }
+        }
+
+        .project-foot {
+            justify-content: space-between;
+        }
+
+        .foot-item {
+            font-size: 14px;
+
+            ~.foot-item {
+                margin-right: 0;
+
+                @include xs {
+                    margin: 7px;
+                }
+            }
+        }
+
+        .item-icon {
+            svg {
+                width: 14px;
+            }
+        }
+    }
+}
+

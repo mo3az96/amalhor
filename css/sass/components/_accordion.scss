@@ -1,0 +1,78 @@
+.mo-panel {
+    display: none;
+    padding: 0 15px 0;
+}
+
+.mo-accordion {
+    cursor: pointer;
+    width: 100%;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    &.nav-foot-header {
+        &:after {
+            content: url(../images/svg/chevron.svg);
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    &.active {
+
+        &:after {
+            transform: rotate(-90deg);
+
+            html[dir='ltr'] & {
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    &.nav-foot-header {
+        @include xs {
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+}
+
+.nav-foot-cont {
+    @include xs {
+        margin-bottom: 25px;
+    }
+}
+
+
+.clickable {
+    &.block-head {
+        cursor: pointer;
+        width: 100%;
+        transition: 0.4s;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        &:after {
+            content: url(../images/svg/acc.svg);
+            transform: scale(0.75);
+            transition: all 0.3s ease-in-out;
+        }
+
+        >a {
+            display: none !important;
+        }
+
+        &.active {
+
+            &:after {
+                transform: scale(0.75) rotate(180deg);
+            }
+        }
+    }
+}

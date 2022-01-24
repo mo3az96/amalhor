@@ -1,0 +1,120 @@
+footer {
+    padding-top: 42px;
+    background-color: #fff;
+    background-image: url(../images/footer.png);
+    background-position: left 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.foot-header {
+    font-size: 17px;
+    color: $footer;
+    margin-bottom: 20px;
+
+    @include xs {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+.footer-logo {
+    @include xs {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.nav-foot {
+    margin: 0;
+}
+
+.nav-foot-li {
+    margin-bottom: 10px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    @include xs {
+        margin-bottom: 7px;
+    }
+}
+
+.nav-foot-link {
+    font-size: 14px;
+    color: #7d8597;
+    transition: all 0.3s ease-in-out;
+    display: inline-flex;
+    text-transform: capitalize;
+    font-family: SST;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        transform: translateX(-5px);
+        color: $main;
+    }
+}
+
+.footer-mail-cont {
+    margin-top: 30px;
+
+    a {
+        font-size: 14px;
+        color: #404756;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: $main;
+            text-decoration: none;
+        }
+    }
+
+    @include xs {
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+
+    a {
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+
+        ~a {
+            margin-inline-start: 5px;
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+    @include xs{
+        justify-content: center;
+    }
+}
+
+.coptrights {
+    border-top: solid 0.5px rgba(51, 69, 101, 0.1);
+    margin-top: 25px;
+
+    p {
+        font-size: 12px;
+        color: #7d8597;
+        margin: 0;
+        height: 40px;
+        display: flex;
+        align-items: center;
+
+        @include xs {
+            justify-content: center;
+        }
+    }
+}

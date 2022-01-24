@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.325" height="28.319" viewBox="0 0 28.325 28.319">
+    <defs>
+        <style>
+            .cls-1{fill:#60d049}
+        </style>
+    </defs>
+    <g id="Icon_ionic-ios-pricetags" data-name="Icon ionic-ios-pricetags">
+        <path id="Path_17195" data-name="Path 17195" class="cls-1" d="M4 2.25h7.473a.876.876 0 0 1 .62.259l14.872 14.928a1.755 1.755 0 0 1 0 2.478l-7.05 7.113a1.882 1.882 0 0 1-2.744.133L2.509 12.474a.876.876 0 0 1-.259-.62V4A1.751 1.751 0 0 1 4 2.25zm2.9 6.8a1.946 1.946 0 1 0-1.723-1.729A1.945 1.945 0 0 0 6.9 9.047z" transform="translate(.848 -2.25)"/>
+        <path id="Path_17196" data-name="Path 17196" class="cls-1" d="M15.067 5.646v7.189a.876.876 0 0 0 .259.62l16.388 16.388-.556.556a1.755 1.755 0 0 1-2.478 0L13.808 15.465a.876.876 0 0 1-.259-.62V7.379a1.753 1.753 0 0 1 1.518-1.733z" transform="translate(-13.549 -2.592)"/>
+    </g>
+</svg>
